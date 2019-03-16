@@ -1,0 +1,22 @@
+str=input()
+str=str.split()
+print("1 for all caps,2 for original,3 for title case,4 for start case")
+b=int(input('enter choice'))
+if (b==1):
+    for i in str:
+        print(i.upper(),end=" ")
+if (b==2):
+    for i in str:
+        print(i,end=" ")
+if(b==3):
+    for i in str:
+        print(str.capitalize,end=" ")
+if(b==4):
+    f==0
+    for i in str:
+        if f==0:
+            print(i[0].upper,end=" ")
+            print(i[1:],end=" ")
+            c=c+1
+        else:
+            print(i,end=" ")
