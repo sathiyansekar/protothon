@@ -1,0 +1,6 @@
+import time
+str=" "
+while(1):
+    str=str+"2"
+    print(str)
+    time.sleep(0.5)
