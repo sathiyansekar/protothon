@@ -1,0 +1,15 @@
+from itertools import permutations 
+import nltk
+nltk.download('words')
+
+from nltk.corpus import words
+b=[]
+if __name__ == "__main__": 
+    str = input()
+    permlist=permutations(str)
+    for perm in list(permlist):
+        b.append(''.join(perm))
+    for i in b:
+        while(i in words.words()):
+           print(i)
+           break
