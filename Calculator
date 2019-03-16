@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b,d;
+    int c;
+    printf("enter two numbers:");
+    scanf("%f%f",&a,&b);
+    printf("Enter 1 for add,2 for Subtract,3 for Multiply and 4 for Divide:");
+    scanf("%d",&c);
+    switch(c)
+    {
+        case 1:d=a+b;
+               printf("%f",d);
+               break;
+        case 2:d=a-b;
+               printf("%f",d);
+               break;
+        case 3:d=a*b;
+               printf("%f",d);
+               break;
+        case 4:if(b!=0)
+               {d=a/b;
+               printf("%f",d);}
+               else
+               {printf("invalid input");}
+               break;
+        default:printf("invalid input");
+    }
+    
+    
+}
